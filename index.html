@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoAventura</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="EcoAventura Logo">
+            <h1>EcoAventura</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Tours</a></li>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <input type="text" placeholder="Pesquisar no site">
+        </nav>
+    </header>
+
+    <!-- Seção Principal -->
+    <main>
+        <section id="destaque">
+            <div class="imagem-destaque">
+                <img src="images/caiaque.jpg" alt="Aventura de Caiaque">
+            </div>
+            <div class="texto-destaque">
+                <h2>Atividades em Destaque</h2>
+                <div class="tours">
+                    <div class="tour">
+                        <img src="images/caminhada.jpg" alt="Caminhada na Floresta">
+                        <div class="tag">Recomendado</div>
+                        <p>Caminhada na Floresta - 2 dias</p>
+                    </div>
+                    <div class="tour">
+                        <img src="images/caiaque.jpg" alt="Aventura de Caiaque">
+                        <div class="tag">Recomendado</div>
+                        <p>Aventura de Caiaque - 1 dia</p>
+                    </div>
+                    <div class="tour">
+                        <img src="images/mergulho.jpg" alt="Mergulho Marinho">
+                        <div class="tag">Novo</div>
+                        <p>Mergulho Marinho - 2 horas</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="explore">
+            <h2>Explore a emoção da natureza</h2>
+            <p>Descubra emocionantes aventuras ao ar livre com a EcoAventura</p>
+            <button id="agendarBtn">Agende Agora</button>
+        </section>
+
+        <!-- Seção de Eventos -->
+        <section id="eventos">
+            <h2>Próximo Evento</h2>
+            <div class="evento">
+                <div class="evento-item">
+                    <div class="circulo">
+                        <img src="images/bicicleta.png" alt="Trilha de Bicicleta">
+                    </div>
+                    <p>Trilha de Bicicleta<br>Agosto 2024, dia 20</p>
+                </div>
+                <div class="evento-item">
+                    <div class="circulo">
+                        <img src="images/rafting.png" alt="Rafting no Rio">
+                    </div>
+                    <p>Rafting no Rio<br>Setembro 2024, dia 5</p>
+                </div>
+                <div class="evento-item">
+                    <div class="circulo">
+                        <img src="images/acampamento.png" alt="Acampamento Noturno">
+                    </div>
+                    <p>Acampamento Noturno<br>Setembro 2024, dia 10</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Histórias -->
+        <section id="historias">
+            <h2>Histórias de Aventura</h2>
+            <article>
+                <h3>Jane Doe - Trilhos na Floresta</h3>
+                <p>Publicado há 1 dia</p>
+                <p>Diverti-me imenso a explorar a natureza! #Adventure #NatureLover</p>
+                <img src="images/trilho.jpg" alt="Trilhos na Floresta">
+            </article>
+        </section>
+
+        <!-- Seção de Newsletter -->
+        <section id="newsletter">
+            <h2>Subscreva ao Newsletter</h2>
+            <form id="newsletterForm">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Introduza o seu nome">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Introduza o seu e-mail">
+                <button type="submit">Se inscrever</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 EcoAventura. Todos os Direitos Reservados. <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
+    </footer>
+
+    <!-- Pop-up de Agendamento -->
+    <div id="agendamentoPopup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Preencha os seus dados</h2>
+            <form id="agendamentoForm">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Introduza o seu nome">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Introduza o seu e-mail">
+                <label for="atividade">Atividade:</label>
+                <select id="atividade" name="atividade">
+                    <option value="caminhada">Caminhada na Floresta - 2 dias</option>
+                    <option value="caiaque">Aventura de Caiaque - 1 dia</option>
+                    <option value="mergulho">Mergulho Marinho - 2 horas</option>
+                </select>
+                <button type="submit">Agendar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
